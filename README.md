@@ -10,11 +10,9 @@ Deployment (Linux options in brackets):
 
 Установка на Windows (опции командной строки в квадратных скобках):
 - Скачать файлы проекта с Github (Clone or Download - Download ZIP)
-- Распаковать скачанный архив и вложенный в него архив lotw_dev.zip
 - Открыть командную строку
 - Установить clld и её зависимости [ python -m pip install clld ]
 - Перейти в директорию проекта (Здесь подразумевается, что проект был скачан в С:\Downloads. [ cd C:\Downloads\LotW_clld-master\lotw_dev ])
-- Запустить файл setup.py с опцией develop [ python setup.py develop ]
 - Раздать приложение [ python -m pyramid.scripts.pserve --reload development.ini ].
 - Перейти в браузере по адресу 127.0.0.1:6543 
 
