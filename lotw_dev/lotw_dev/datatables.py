@@ -56,7 +56,7 @@ class Families(Languages):
 
     def col_defs(self):
         return [
-            NameCol(self, 'name'),
+            NameCol(self, 'name', model_col=Language.name, sTitle="Name"),
             IsoCol(self, 'iso', model_col=lotw_devLanguage.iso, sTitle='ISO-639-3'),
             FamilyCol(self, 'family', model_col=lotw_devLanguage.family, sTitle="Family"),
             BranchCol(self, 'branch', model_col=lotw_devLanguage.branch, sTitle="Branch"),
