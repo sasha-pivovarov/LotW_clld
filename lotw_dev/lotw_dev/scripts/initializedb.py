@@ -32,7 +32,14 @@ def main(args):
 
 
     dataset = common.Dataset(id=lotw_dev.__name__,
-                             domain='lotw_dev.clld.org')
+                             domain='lotw_dev.clld.org',
+                             name="Languages of the World",
+                             publisher_name="IL RAS",
+                             publisher_place="Moscow",
+                             publisher_url="http://iling-ran.ru/main/",
+                             jsondata={
+                                 'license_name': 'Creative Commons Attribution 4.0 International License'}
+                             )
     DBSession.add(dataset)
     feature_dict = {}
     unnamed_feature_count = 0
